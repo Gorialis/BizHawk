@@ -3687,7 +3687,7 @@ namespace BizHawk.Client.EmuHawk
 						}
 					}
 
-					ApiManager.Restart(Emulator.ServiceProvider);
+					APIManager.Restart(Emulator.ServiceProvider);
 					GlobalWin.Tools.Restart();
 
 					if (Global.Config.LoadCheatFileByGame)
@@ -3858,7 +3858,7 @@ namespace BizHawk.Client.EmuHawk
 				Global.Game = GameInfo.NullInstance;
 
 				GlobalWin.Tools.Restart();
-				ApiManager.Restart(Emulator.ServiceProvider);
+				APIManager.Restart(Emulator.ServiceProvider);
 				RewireSound();
 				ClearHolds();
 				ToolFormBase.UpdateCheatRelatedTools(null, null);
